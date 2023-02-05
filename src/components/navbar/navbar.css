@@ -1,0 +1,148 @@
+.navbar {
+  /* background-color: #000; */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1a1a1a;
+}
+
+.navbar .left {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .left a.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.navbar .left .logo span.dot {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.navbar .right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.navbar .right ul.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .right ul.items li {
+  margin-left: 30px;
+}
+
+.navbar .right ul.items li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.navbar .right ul.items li a:hover {
+  color: #646cff;
+}
+
+.navbar .right ul.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.navbar .right ul.socials:before {
+  content: "|";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.navbar .right ul.socials li {
+  margin-left: 30px;
+}
+
+.navbar .right ul.socials li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .navbar .left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .navbar .left a.logo {
+    margin: 0;
+  }
+  .navbar .right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .navbar .right ul.items {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .navbar .right ul.items li {
+    margin: 10px 10px;
+  }
+  .navbar .right ul.socials {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .navbar .right ul.socials li {
+    margin: 10px 10px;
+  }
+
+  .navbar .right ul.socials:before {
+    content: "";
+  }
+}
