@@ -1,12 +1,14 @@
+# github CD for reactjs app
 name: Continuous Deployment
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  deploy:
-    name: Deploy
+  buildAndDeploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -19,7 +21,6 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: build
           BUILD_SCRIPT: npm run build
-          BASE_BRANCH: main
           CLEAN: true
