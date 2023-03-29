@@ -24,3 +24,4 @@ jobs:
           FOLDER: dist
           BUILD_SCRIPT: npm run build
           CLEAN: true
+          SSH: true
