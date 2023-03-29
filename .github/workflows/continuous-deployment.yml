@@ -21,6 +21,6 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build
+          FOLDER: dist
           BUILD_SCRIPT: npm run build
           CLEAN: true
