@@ -9,7 +9,7 @@ export default function Profile() {
           Hello there, I'm
           <h4 className="profileInfoName">Bilal Akkil </h4>
         </span>
-        <span className="profileInfoDesc">a Software Engineer.</span>
+        <span className="profileInfoDesc">a Software Engineer</span>
       </div>
       <div className="right">
         <img className="profileImg" src="images/hi.png" alt="" />
