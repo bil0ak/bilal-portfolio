@@ -4,19 +4,58 @@ import "./skills.css";
 const skills = [
   {
     id: 1,
-    title: "Web Development",
+    title: "NodeJS",
+    lvl: 3,
   },
   {
     id: 2,
-    title: "Mobile Development",
+    title: "ReactJS",
+    lvl: 3,
   },
   {
     id: 3,
-    title: "UI/UX Design",
+    title: "JavaScript",
+    lvl: 3,
   },
   {
     id: 4,
-    title: "Data Science",
+    title: "Git",
+    lvl: 3,
+  },
+  {
+    id: 5,
+    title: "MongoDB",
+    lvl: 3,
+  },
+  {
+    id: 6,
+    title: "Linux",
+    lvl: 3,
+  },
+  {
+    id: 7,
+    title: "Docker",
+    lvl: 2,
+  },
+  {
+    id: 8,
+    title: "AWS",
+    lvl: 2,
+  },
+  {
+    id: 9,
+    title: "Python",
+    lvl: 2,
+  },
+  {
+    id: 10,
+    title: "Caddy",
+    lvl: 1,
+  },
+  {
+    id: 11,
+    title: "Apache",
+    lvl: 1,
   },
 ];
 export default function Skills() {
@@ -27,14 +66,33 @@ export default function Skills() {
           <h1 className="title">Skills</h1>
         </div>
         <div className="bottom">
-          {skills.map((skill) => (
-            <div className="item">
-              <div className="title">{skill.title}</div>
-              <div className="bar">
-                <div className="bar_filled"></div>
-              </div>
-            </div>
-          ))}
+        <div className="lvl">
+            {skills
+              .filter((skill) => skill.lvl === 3)
+              .map((skill) => (
+                <div className="item lvl3" key={skill.id}>
+                  <div className="title">{skill.title}</div>
+                </div>
+              ))}
+          </div>
+          <div className="lvl">
+            {skills
+              .filter((skill) => skill.lvl === 2)
+              .map((skill) => (
+                <div className="item lvl2" key={skill.id}>
+                  <div className="title">{skill.title}</div>
+                </div>
+              ))}
+          </div>
+          <div className="lvl">
+            {skills
+              .filter((skill) => skill.lvl === 1)
+              .map((skill) => (
+                <div className="item lvl1" key={skill.id}>
+                  <div className="title">{skill.title}</div>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </div>
