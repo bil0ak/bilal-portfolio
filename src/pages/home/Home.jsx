@@ -5,6 +5,7 @@ import "./home.css";
 import Projects from "../../components/projects/Projects";
 import Skills from "../../components/skills/Skills";
 import Education from "../../components/education/Education";
+import Contact from "../../components/contact/Contact";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section className="education_section" id="education">
         <Education />
+      </section>
+      <section className="contact_section" id="contact">
+        <Contact />
       </section>
     </div>
   );
