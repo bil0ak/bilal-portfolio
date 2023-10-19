@@ -43,7 +43,7 @@ export default function NavBar() {
           </li>
           <li className="social">
             <a href="https://twitter.com/bilal_akkil" target="_blank">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-x-twitter"></i>
             </a>
           </li>
         </ul>
