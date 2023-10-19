@@ -33,17 +33,17 @@ export default function NavBar() {
         <ul className="socials">
           <li className="social">
             <a href="https://www.github.com/bil0ak" target="_blank">
-              <i className="fab fa-github"></i>
+              <iconify-icon icon="simple-icons:github"></iconify-icon>
             </a>
           </li>
           <li className="social">
             <a href="https://www.linkedin.com/in/bilal-akkil/" target="_blank">
-              <i className="fab fa-linkedin"></i>
+              <iconify-icon icon="simple-icons:linkedin"></iconify-icon>
             </a>
           </li>
           <li className="social">
             <a href="https://twitter.com/bilal_akkil" target="_blank">
-              <i className="fab fa-x-twitter"></i>
+              <iconify-icon icon="simple-icons:x"></iconify-icon>
             </a>
           </li>
         </ul>
