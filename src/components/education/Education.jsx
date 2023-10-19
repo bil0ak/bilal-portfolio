@@ -14,7 +14,9 @@ export default function Education() {
               <i className="fas fa-graduation-cap"></i>
               Teesside University, UK
             </div>
-            <div className="subtitle">BSc (Hons) Computer Science</div>
+            <div className="subtitle">
+              BSc (with First Class Honours) Artificial Intelligence
+            </div>
           </div>
           <div className="item">
             <div className="title">
