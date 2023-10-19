@@ -50,7 +50,7 @@ export default function Projects() {
       </div>
       <div className="bottom">
         {projects.map((project) => (
-          <div className="project">
+          <div className="project" key={project.id}>
             <div className="left">
               <img src={project.img} alt={project.title} />
             </div>
@@ -61,23 +61,25 @@ export default function Projects() {
               <p className="projectDesc">{project.desc}</p>
               <ul className="projectTechs">
                 {project.techs.map((tech) => (
-                  <li className="projectTech">{tech}</li>
+                  <li className="projectTech" key={tech}>
+                    {tech}
+                  </li>
                 ))}
               </ul>
               <div className="projectLinks">
                 {project.url ? (
                   <a href={project.url} target="_blank">
-                    <i className="fas fa-link"></i>
+                    <iconify-icon icon="ion:link"></iconify-icon>
                   </a>
                 ) : (
                   <a href={project.url} target="_blank">
-                    <i className="fas fa-link"></i>
+                    <iconify-icon icon="ion:link"></iconify-icon>
                     <p>&nbsp;Not Live Yet</p>
                   </a>
                 )}
                 {project.github ? (
                   <a href={project.github} target="_blank">
-                    <i className="fab fa-github"></i>
+                    <iconify-icon icon="simple-icons:github"></iconify-icon>
                   </a>
                 ) : (
                   <></>

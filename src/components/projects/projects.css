@@ -131,8 +131,8 @@
   background-color: #2a2a2a;
 }
 
-.projects .bottom .project .right .projectLinks a i {
-  font-size: 1.2em;
+.projects .bottom .project .right .projectLinks a iconify-icon {
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {

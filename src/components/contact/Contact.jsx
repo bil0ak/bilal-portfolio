@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="bottom">
           <div className="item">
             <div className="title">
-              <i className="fas fa-envelope"></i>
+              <iconify-icon icon="ic:round-email"></iconify-icon>
             </div>
             <div className="subtitle">
               <a href="mailto:contact@bilalakkil.com" _target="blank">
@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
           <div className="item">
             <div className="title">
-              <i className="fab fa-twitter"></i>
+              <iconify-icon icon="simple-icons:x"></iconify-icon>
             </div>
             <div className="subtitle">
               <a href="https://twitter.com/bilal_akkil" target="_blank">
@@ -31,7 +31,7 @@ export default function Contact() {
           </div>
           <div className="item">
             <div className="title">
-              <i className="fab fa-linkedin"></i>
+              <iconify-icon icon="simple-icons:linkedin"></iconify-icon>
             </div>
             <div className="subtitle">
               <a

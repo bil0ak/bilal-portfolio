@@ -11,7 +11,7 @@ export default function Education() {
         <div className="bottom">
           <div className="item">
             <div className="title">
-              <i className="fas fa-graduation-cap"></i>
+              <iconify-icon icon="fa6-solid:graduation-cap"></iconify-icon>
               Teesside University, UK
             </div>
             <div className="subtitle">
@@ -20,7 +20,7 @@ export default function Education() {
           </div>
           <div className="item">
             <div className="title">
-              <i className="fas fa-graduation-cap"></i>
+              <iconify-icon icon="fa6-solid:graduation-cap"></iconify-icon>
               British Applied College, UAE
             </div>
             <div className="subtitle">Higher National Diploma in Computing</div>
