@@ -22,6 +22,14 @@ const projects = [
   },
   {
     id: 3,
+    title: "Al Fursan Real Estate",
+    desc: "A simple portfolio website for a real estate company.",
+    img: "images/alfursan.png",
+    url: "https://alfursanrealestate.com/",
+    techs: ["ReactJS", "Vercel"],
+  },
+  {
+    id: 4,
     title: "Prestige Store",
     desc: "An e-commerce platform built with ReactJS and ExpressJS.",
     img: "images/prestige.png",
@@ -35,14 +43,6 @@ const projects = [
       "AWS EC2",
       "AWS S3",
     ],
-  },
-  {
-    id: 4,
-    title: "Al Fursan Real Estate",
-    desc: "A simple portfolio website for a real estate company.",
-    img: "images/alfursan.png",
-    url: "https://alfursanrealestate.com/",
-    techs: ["ReactJS", "Vercel"],
   },
 ];
 
