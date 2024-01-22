@@ -48,7 +48,7 @@ const projects = [
 
 export default function Projects() {
   // reverse projects to make it easire to add new ones.
-  const reversedProjects = [...projects].reverse(); // Create a copy and reverse it
+  const reversedProjects = [...projects].reverse();
 
   return (
     <div className="projects">
