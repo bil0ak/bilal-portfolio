@@ -4,7 +4,25 @@ import "./projects.css";
 const projects = [
   {
     id: 1,
-    title: "Prestige Store || NOT LIVE YET",
+    title: "The MCU",
+    desc: "A website that gives the order to the mcu movies. Built with Vanilla JS and TMDB API.",
+    img: "images/themcu.png",
+    url: "https://themcu.bilalakkil.com/",
+    github: "https://github.com/Bilal-Akkil/themcu",
+    techs: ["VanillaJS", "TMDB API"],
+  },
+  {
+    id: 2,
+    title: "Todo App",
+    desc: "A todo app built with ReactJS and Appwrite.",
+    img: "images/todo.png",
+    url: "https://todo-v2.bilalakkil.com/",
+    github: "https://github.com/bil0ak/todo-v2",
+    techs: ["ReactJS", "Appwrite"],
+  },
+  {
+    id: 3,
+    title: "Prestige Store",
     desc: "An e-commerce platform built with ReactJS and ExpressJS.",
     img: "images/prestige.png",
     techs: [
@@ -19,26 +37,19 @@ const projects = [
     ],
   },
   {
-    id: 2,
-    title: "Todo App",
-    desc: "A todo app built with ReactJS and Appwrite.",
-    img: "images/todo.png",
-    url: "https://todo-v2.bilalakkil.com/",
-    github: "https://github.com/bil0ak/todo-v2",
-    techs: ["ReactJS", "Appwrite"],
-  },
-  {
-    id: 3,
-    title: "The MCU",
-    desc: "A website that gives the order to the mcu movies. Built with Vanilla JS and TMDB API.",
-    img: "images/themcu.png",
-    url: "https://themcu.bilalakkil.com/",
-    github: "https://github.com/Bilal-Akkil/themcu",
-    techs: ["VanillaJS", "TMDB API"],
+    id: 4,
+    title: "Al Fursan Real Estate",
+    desc: "A simple portfolio website for a real estate company.",
+    img: "images/alfursan.png",
+    url: "https://alfursanrealestate.com/",
+    techs: ["ReactJS", "Vercel"],
   },
 ];
 
 export default function Projects() {
+  // reverse projects to make it easire to add new ones.
+  const reversedProjects = [...projects].reverse(); // Create a copy and reverse it
+
   return (
     <div className="projects">
       <div className="top">
@@ -49,7 +60,7 @@ export default function Projects() {
         </p>
       </div>
       <div className="bottom">
-        {projects.map((project) => (
+        {reversedProjects.map((project) => (
           <div className="project" key={project.id}>
             <div className="left">
               <img src={project.img} alt={project.title} />
@@ -74,7 +85,7 @@ export default function Projects() {
                 ) : (
                   <a href={project.url} target="_blank">
                     <iconify-icon icon="ion:link"></iconify-icon>
-                    <p>&nbsp;Not Live Yet</p>
+                    <p>&nbsp;Not Live</p>
                   </a>
                 )}
                 {project.github ? (
